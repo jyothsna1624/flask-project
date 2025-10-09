@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Potnuru Jyothsna Chandrika — EEE graduate and Java/Embedded/SCADA enthusiast. Projects, internships and contact." />
+    <title>Jyothsna Chandrika — Portfolio</title>
+
+    <!-- main stylesheet (Flask static) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+
+    <!-- box icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#home" class="nav__logo">Jyothsna</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle"><i class="bx bx-menu"></i></div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-- HOME -->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />
+            I'm <span class="home__title-color">Potnuru Jyothsna Chandrika</span><br />
+            — Software Engineer | Aspiring Program Manager
+          </h1>
+
+           <div class="home__buttons">
+            <a href="#contact" class="button">Contact Me</a>
+            <a href="{{ url_for('static', filename='resume/Jyothsna_CV.pdf') }}" class="button" download>Download CV</a>
+           </div>
+
+<p class="home__intro">
+  Resourceful EEE graduate from Andhra University with hands-on internship experience in
+  management & procurement, substation operations, HMI/SCADA troubleshooting and embedded systems.
+  Skilled in Java, SQL, MATLAB, PLC and systems thinking — I build practical solutions that bridge software and hardware.
+</p>
+
+        </div>
+
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/jyothsna-chandrika-potnuru-08a420337/" class="home__social-icon" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile"> <i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/jyothsna1624" class="home__social-icon" target="_blank" rel="noopener noreferrer" title="GitHub Profile"> <i class='bx bxl-github'></i></a>
+          <a href="mailto:jyothsna2k4@gmail.com" class="home__social-icon" aria-label="Email"><i class="bx bx-envelope"></i></a>
+          <a href="https://www.instagram.com/jyothsna.xo" class="home__social-icon" target="_blank" rel="noopener noreferrer"  title="Instagram Profile"> <i class='bx bxl-instagram'></i></a>
+        </div>
+
+        <div class="home__img" aria-hidden="true">
+
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="{{ url_for('static', filename='img/perfil.png') }}" alt="Profile photo" class="home__photo">
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'm Potnuru Jyothsna Chandrika</h2>
+            <p class="about__text">
+              I graduated with a B.Tech (EEE) from Andhra University (CGPA 8.07). I've completed internships in management & procurement,
+              substation operations (33/11 kV), HMI/SCADA troubleshooting, embedded systems and content/IT support. I enjoy building solutions
+              that reduce downtime, improve processes and use software to solve hardware problems.
+            </p>
+
+            <ul class="about__list">
+              <li><strong>Location:</strong> Visakhapatnam, India</li>
+              <li><strong>Email:</strong> <a href="mailto:jyothsna2k4@gmail.com">jyothsna2k4@gmail.com</a></li>
+              <li><strong>Phone:</strong> +91 73965 58402</li>
+           </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Technical & Core Skills</h2>
+            <p class="skills__text">A mix of software development, embedded systems and electrical engineering fundamentals.</p>
+
+            <div class="skills__data">
+              <div class="skills__names"><i class="bx bxl-java skills__icon"></i><span class="skills__name">Java</span></div>
+              <div class="skills__bar skills__java"></div><div><span class="skills__percentage">90%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names"><i class="bx bx-data skills__icon"></i><span class="skills__name">SQL / DBMS</span></div>
+              <div class="skills__bar skills__sql"></div><div><span class="skills__percentage">85%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names"><i class="bx bx-cog skills__icon"></i><span class="skills__name">Operating Systems</span></div>
+              <div class="skills__bar skills__os"></div><div><span class="skills__percentage">80%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names"><i class="bx bx-chip skills__icon"></i><span class="skills__name">Embedded Systems / PLC</span></div>
+              <div class="skills__bar skills__plc"></div><div><span class="skills__percentage">75%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names"><i class="bx bx-brain skills__icon"></i><span class="skills__name">MATLAB / Simulink</span></div>
+              <div class="skills__bar skills__matlab"></div><div><span class="skills__percentage">80%</span></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names"><i class="bx bx-user-voice skills__icon"></i><span class="skills__name">Interpersonal: PM, Communication</span></div>
+              <div class="skills__bar skills__pm"></div><div><span class="skills__percentage">95%</span></div>
+            </div>
+          </div>
+         <div>
+            <img src="{{ url_for('static', filename='img/work3.jpg') }}" alt="work sample" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+
+      <!-- EXPERIENCE -->
+      <section class="work section" id="work">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__item">
+            <h3>Management & Procurement Intern — Chandra Electricals</h3>
+            <small>Nov 2024 – Jan 2025 — Visakhapatnam</small>
+            <p>Assisted inventory analysis, recommended restocking strategies for runner/slow-moving items and worked cross-functionally to improve fulfillment speed.</p>
+          </div>
+
+          <div class="work__item">
+            <h3>Substation Intern — APEPDCL (33/11 kV)</h3>
+            <small>May 2024 – Jun 2024 — Visakhapatnam</small>
+            <p>Assisted with testing/inspection of switchgear, monitored operational data and supported outage root-cause analysis.</p>
+          </div>
+
+          <div class="work__item">
+            <h3>HMI/SCADA Troubleshooter Programmer — Jindal Stainless Ltd</h3>
+            <small>Dec 2023 – Feb 2024 — Visakhapatnam</small>
+            <p>Developed HMI/SCADA screens for hydraulic press optimization and resolved software issues to reduce downtime.</p>
+          </div>
+
+          <div class="work__item">
+            <h3>Content Creation & IT Support — SHL</h3>
+            <small>May 2023 – Oct 2023 — New Delhi</small>
+            <p>Managed social campaigns, event coordination and IT support to increase student engagement.</p>
+          </div>
+
+          <div class="work__item">
+            <h3>Embedded Systems Intern — Teck Team Solutions</h3>
+            <small>Sep 2023 – Oct 2023 — Visakhapatnam</small>
+            <p>Built Arduino projects: home automation, smart parking and automatic irrigation systems.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="work__container bd-grid">
+          <div class="work__item">
+            <h3>Distributed Caching System</h3>
+            <p>Java-based distributed cache with REST APIs, TTL expiration, LRU eviction and consistent hashing for fault tolerance. Documented architecture and thread-safety design.</p>
+          </div>
+
+          <!-- Add more project items here -->
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container bd-grid">
+          <!-- Using mailto fallback; you can replace with Formspree/Backend -->
+          <form action="mailto:jyothsna2k4@gmail.com" method="post" enctype="text/plain" class="contact__form">
+            <input type="text" name="Name" placeholder="Your name" class="contact__input" required />
+            <input type="email" name="Email" placeholder="Your email" class="contact__input" required />
+            <textarea name="Message" cols="0" rows="8" class="contact__input" placeholder="Message..." required></textarea>
+            <input type="submit" value="Send Message" class="contact__button button" />
+          </form>
+
+          <div class="contact__info">
+            <h3>Or reach me directly</h3>
+            <p><strong>Email:</strong> <a href="mailto:jyothsna2k4@gmail.com">jyothsna2k4@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 73965 58402</p>
+            <p><strong>Location:</strong> Visakhapatnam, India</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__title">Potnuru Jyothsna Chandrika</p>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/jyothsna-chandrika-potnuru-08a420337/" class="home__social-icon" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile"> <i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/jyothsna-potnuru" class="home__social-icon" target="_blank" rel="noopener noreferrer" title="GitHub Profile"> <i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/jyothsna.xo" class="home__social-icon" target="_blank" rel="noopener noreferrer"  title="Instagram Profile"> <i class='bx bxl-instagram'></i></a>
+
+      </div>
+      <p class="footer__copy">© 2025 Potnuru Jyothsna. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
